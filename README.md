@@ -12,7 +12,7 @@ Feature selection via recursive removal of the most correlated pair. The feature
 * README.md - the README file, which you are now reading
 * [requirements.txt](https://github.com/daniel-furman/RecFeatureSelect/blob/main/requirements.txt) - prerequisites to install this package, used by pip
 * [setup.py](https://github.com/daniel-furman/RecFeatureSelect/blob/main/setup.py) - installer script
-* [ltwMCMC](https://github.com/daniel-furman/RecFeatureSelect/tree/main/RecFeatureSelect)/ - the library code itself
+* [RecFeatureSelect](https://github.com/daniel-furman/RecFeatureSelect/tree/main/RecFeatureSelect)/ - the library code itself
 * [tests](https://github.com/daniel-furman/RecFeatureSelect/tree/main/test)/ - unit tests
 
 ---
