@@ -17,7 +17,8 @@ Feature selection via recursive removal of the most correlated pair. The feature
 
 ---
 
-Example of runtime interface, with the recursive calls and the final saved covariance matrix (all beneath the threshold)
+Example of runtime interface, with the recursive calls and the final saved covariance matrix (all beneath the threshold):
+Comparisons during run | Final covariance matrix
 :---------------------------------:|:----------------------------------------:
 ![](data/img1.png) | ![](data/img2.png)
 
