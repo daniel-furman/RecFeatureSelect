@@ -17,11 +17,13 @@ You can type `?RecFeatureSelect` for info.
 ### Basic Use
 
 ---
-`from RecFeatureSelect._main import RecFeatureSelect`
-`import pandas as pd`
-`covariance = pd.read_csv(...) #csv of original covariance matrix`
-`feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row`
-`threshold = ... #desired rho threshold, e.g., 0.8`
-`raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix`
+`from RecFeatureSelect._main import RecFeatureSelect`<br>
+`import pandas as pd`<br>
+<br>
+`covariance = pd.read_csv(...) #csv of original covariance matrix`<br>
+`feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row`<br>
+`threshold = ... #desired rho threshold, e.g., 0.8`<br>
+`raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix`<br>
+<br>
 `RecFeatureSelect(covariance, feature_importance, threshold, raw_data)`
 
