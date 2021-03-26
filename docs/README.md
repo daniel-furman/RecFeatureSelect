@@ -14,7 +14,7 @@ Once in the Jupyter notebook, import the main class as follows:
 
 You can type `?RecFeatureSelect` for info. 
 
-### Basic Use
+### Basic Use Instructions
 
 ---
 `from RecFeatureSelect._main import RecFeatureSelect`<br>
