@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/daniel-furman/RecFeatureSelect.svg?branch=main)](https://travis-ci.com/daniel-furman/RecFeatureSelect)
 
-## RecFeatureSelect (Recursive Feature Selection). 
+### RecFeatureSelect (Recursive Feature Selection). 
 
 Feature selection via recursive removal of the most correlated pair. The feature importance scores are used as the rankings, deciding which variable to drop at each call.
 
@@ -20,8 +20,9 @@ Feature selection via recursive removal of the most correlated pair. The feature
 
 ---
 
-Example of runtime interface, with the recursive calls and the final saved covariance matrix (all beneath the threshold):
-Comparisons during run | Final covariance matrix (notice r < 0.85, our threshold)
+### Example outputs:
+
+Runtime output | Final covariance (r < 0.85)
 :---------------------------------:|:----------------------------------------:
 ![](data/img3.png) | ![](data/img5.png)
 
