@@ -2,6 +2,8 @@
 
 ### RecFeatureSelect (Recursive Feature Selection). 
 
+---
+
 Feature selection via recursive removal of the most correlated pair. The feature importance scores are used as the rankings, deciding which variable to drop at each call.
 
 * The main function can be found from the source folder, RecFeatureSelect.
@@ -9,6 +11,8 @@ Feature selection via recursive removal of the most correlated pair. The feature
 * After the run the function will save the final covariance matrix to file as "cov.csv". All correlations will be less than the input threshold.  
 
 ### Package Layout
+
+---
 
 * [RecFeatureSelect](https://github.com/daniel-furman/RecFeatureSelect/tree/main/RecFeatureSelect) - the library code itself
 * [docs](https://github.com/daniel-furman/RecFeatureSelect/tree/main/docs) - instructions for import and basic use
@@ -18,15 +22,17 @@ Feature selection via recursive removal of the most correlated pair. The feature
 * [setup.py](https://github.com/daniel-furman/RecFeatureSelect/blob/main/setup.py) - installer script
 * [tests](https://github.com/daniel-furman/RecFeatureSelect/tree/main/test)/ - unit tests
 
----
-
 ### Example outputs:
+
+---
 
 Runtime output | Final covariance (r < 0.85)
 :---------------------------------:|:----------------------------------------:
 ![](data/img3.png) | ![](data/img5.png)
 
 ### Longer Description:
+
+---
 
 This function selects de-correlated features for a modeling experiment by filtering the most similar pair at each call. The algorithm reaches the
 stopping case when all pairs of features are below the Spearman's statistic `threshold`. The feature importances are used as the ranking.
@@ -51,6 +57,8 @@ stopping case when all pairs of features are below the Spearman's statistic `thr
 * raw_data: The raw feature dataframe that constructed the covariance matrix.
 
 ### Warnings:
+
+---
 
 * The Pandas dataframes should have the same order of variables.
 * Make sure dependencies are installed: pandas, np, scipy.
