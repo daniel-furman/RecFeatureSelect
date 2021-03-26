@@ -1,3 +1,7 @@
+### Import Instructions
+
+---
+
 To import the package to the base conda environment in the shell (for example, to use in Jupyter notebooks):
 
 `/opt/anaconda3/bin/pip install RecFeatureSelect`
@@ -10,3 +14,19 @@ Once in the Jupyter notebook, import the main class as follows:
 
 You can type `?RecFeatureSelect` for info. 
 
+### Basic Use
+
+---
+`
+from RecFeatureSelect._main import RecFeatureSelect
+import pandas as pd
+`
+
+`
+covariance = pd.read_csv(...) #csv of original covariance matrix
+feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row
+threshold = ... #desired rho threshold, e.g., 0.8
+raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix
+
+RecFeatureSelect(covariance, feature_importance, threshold, raw_data)
+`
