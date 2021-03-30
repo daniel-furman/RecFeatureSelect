@@ -1,4 +1,17 @@
-### Import Instructions
+### Basic Use Instructions
+
+---
+`from RecFeatureSelect import feature_selector`
+`import pandas as pd`<br>
+<br>
+`covariance = pd.read_csv(...) #csv of original covariance matrix`<br>
+`feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row`<br>
+`threshold = ... #desired rho threshold, e.g., 0.8`<br>
+`raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix`<br>
+<br>
+`feature_selector(covariance, feature_importance, threshold, raw_data)`### Import Instructions
+
+### Import and Install Instructions
 
 ---
 
@@ -10,20 +23,8 @@ You may need to change the location of the base conda env (for example, type `wh
 
 Once in the Jupyter notebook, import the main class as follows:
 
-`from RecFeatureSelect._main import RecFeatureSelect`
+`from RecFeatureSelect import feature_selector`
 
-You can type `?RecFeatureSelect` for info. 
+You can type `?feature_selector` for info. 
 
-### Basic Use Instructions
-
----
-`from RecFeatureSelect._main import RecFeatureSelect`<br>
-`import pandas as pd`<br>
-<br>
-`covariance = pd.read_csv(...) #csv of original covariance matrix`<br>
-`feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row`<br>
-`threshold = ... #desired rho threshold, e.g., 0.8`<br>
-`raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix`<br>
-<br>
-`RecFeatureSelect(covariance, feature_importance, threshold, raw_data)`
 
