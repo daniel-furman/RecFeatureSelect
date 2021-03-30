@@ -24,9 +24,8 @@ def test_inputs():
     assert np.all(covariance_org.columns == feature_importance.columns)
     assert list(covariance_org) == list(feature_importance)
 
-from RecFeatureSelect import feature_selector
-
 def test_function():
+    from RecFeatureSelect import feature_selector
     # Second, assert that all final correlations are lower than the threshold
     feature_selector(covariance_org, feature_importance, threshold, raw_data)
     # Grab the final output and convert into numpy array so we can fill diag with zeros
