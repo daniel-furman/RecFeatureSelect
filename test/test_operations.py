@@ -15,9 +15,9 @@ test_data = [
 
 # Unit tests for the feature selection algorithm.
 covariance_org = pd.read_csv(test_data[0])
-feature_importance = pd.read_csv(test_data[0])
+feature_importance = pd.read_csv(test_data[1])
 threshold = 0.85
-raw_data = pd.read_csv(test_data[0])
+raw_data = pd.read_csv(test_data[2])
 
 def test_inputs():
     # First assert that the inputs have the same features (and order)
