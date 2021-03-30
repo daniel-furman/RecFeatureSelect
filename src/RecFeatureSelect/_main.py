@@ -70,7 +70,7 @@ def feature_selector(covariance, feature_importance, threshold, raw_data):
         print('\nCovariance matrix (with r < ', str(threshold), '):\n')
         print(covariance)
         # save the final correlation matrix to file
-        covariance.to_csv('test/data/cov.csv')
+        covariance.to_csv('data/cov.csv')
 
     # one loop forward
     else:
