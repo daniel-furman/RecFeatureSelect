@@ -4,17 +4,16 @@
 # Last modified : 3.10.2021
 
 import pathlib
-from setuptools import setup, find_packages
+from setuptools import setup
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
-
 # The text of the README file
 README = (HERE / "README.md").read_text()
 
 setup(
     name="RecFeatureSelect",
-    version="0.1",
+    version="0.2",
     author="Daniel Ryan Furman",
     author_email="dryanfurman@gmail.com",
     description=("De-correlated feature selection via recursion."),
@@ -22,7 +21,8 @@ setup(
     license="MIT",
     keywords="feature-selection, multicollinearity",
     url="https://github.com/daniel-furman/RecursiveFeatureSelection",
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=["RecFeatureSelect"],
     include_package_data=True,
     install_requires=["numpy", "pandas", "scipy"],
     classifiers=[
