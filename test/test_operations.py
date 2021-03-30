@@ -24,12 +24,21 @@ def test_inputs():
     assert np.all(covariance_org.columns == feature_importance.columns)
     assert list(covariance_org) == list(feature_importance)
 
+from RecFeatureSelect import feature_selector
+
 def test_function():
     # Second, assert that all final correlations are lower than the threshold
-    from RecFeatureSelect import feature_selector
     feature_selector(covariance_org, feature_importance, threshold, raw_data)
-    cov = pd.read_csv('data/cov.csv', index_col = "Unnamed: 0")
+    # Grab the final output
+    DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+    test_output_cov = [
+        os.path.join(DATA, x)
+        for x in ['cov.csv']]
+    # Convert into numpy array so we can fill diag with zeros
+    cov = pd.read_csv(test_output_cov, index_col = "Unnamed: 0")
     cov = cov.to_numpy()
     np.fill_diagonal(cov, 0)
     # did the algorithm remove correlated pairs above the threshold? :
     assert np.all(cov <= threshold)
+
+test_function()
