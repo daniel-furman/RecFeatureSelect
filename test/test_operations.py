@@ -30,10 +30,7 @@ def test_function():
     # Second, assert that all final correlations are lower than the threshold
     feature_selector(covariance_org, feature_importance, threshold, raw_data)
     # Grab the final output
-    DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test/data")
-    test_output_cov = [
-        os.path.join(DATA, x)
-        for x in ['cov.csv']]
+    test_output_cov = 'src/RecFeatureSelect/data/cov.csv'
     # Convert into numpy array so we can fill diag with zeros
     cov = pd.read_csv(test_output_cov, index_col = "Unnamed: 0")
     cov = cov.to_numpy()
