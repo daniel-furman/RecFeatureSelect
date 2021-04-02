@@ -30,7 +30,7 @@ Feature selection via recursive removal of the most correlated pair. The feature
 
 Runtime output | Final covariance (r < 0.85)
 :---------------------------------:|:----------------------------------------:
-![](data/img3.png) | ![](data/img5.png)
+![](test/data/img3.png) | ![](test/data/img5.png)
 
 ### Longer Description:
 
