@@ -16,7 +16,7 @@ Feature selection via recursive removal of the most correlated pair. The feature
 
 ---
 
-* [RecFeatureSelect](https://github.com/daniel-furman/RecFeatureSelect/tree/main/RecFeatureSelect) - the library code itself
+* [RecFeatureSelect](https://github.com/daniel-furman/RecFeatureSelect/tree/main/src/RecFeatureSelect) - the library code itself
 * [docs](https://github.com/daniel-furman/RecFeatureSelect/tree/main/docs) - instructions for import and basic use
 * [LICENSE](https://github.com/daniel-furman/RecFeatureSelect/blob/main/LICENSE) - the MIT license, which applies to this package
 * README.md - the README file, which you are now reading
