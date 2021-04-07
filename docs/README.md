@@ -1,14 +1,15 @@
 ### Basic Use Instructions
 
 ---
-`from RecFeatureSelect import feature_selector`
+`from RecFeatureSelect import feature_selector`<br>
 `import pandas as pd`<br>
 <br>
-`covariance = pd.read_csv(...) #csv of original covariance matrix`<br>
-`feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row`<br>
-`threshold = ... #desired rho threshold, e.g., 0.8`<br>
-`raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix`<br>
-<br>
+`covariance = pd.read_csv(...) #csv of original covariance matrix <br>
+feature_importance = pd.read_csv(...) #feature importance scores, with feature names in the first row <br>
+threshold = ... #desired rho threshold, e.g., 0.8 <br>
+raw_data = pd.read_csv(...) #csv of raw data used to generate the original covariance matrix <br>
+<br>`
+
 `feature_selector(covariance, feature_importance, threshold, raw_data)`### Import Instructions
 
 ### Import and Install Instructions
