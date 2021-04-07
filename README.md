@@ -57,10 +57,3 @@ stopping case when all pairs of features are below the Spearman's statistic `thr
         2013, doi: 10.1111/j.1600-0587.2012.07348.x).
 
 * raw_data: The raw feature dataframe that constructed the covariance matrix.
-
-### Warnings:
-
----
-
-* The Pandas dataframes should have the same order of variables.
-* Make sure dependencies are installed: pandas, np, scipy.
