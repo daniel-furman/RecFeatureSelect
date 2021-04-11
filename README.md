@@ -6,13 +6,17 @@
 
 Feature selection via recursive removal of the most correlated pair. The feature importance scores are used as the rankings, deciding which variable to drop at each call.
 
+Runtime output | Final covariance (r < 0.85)
+:---------------------------------:|:----------------------------------------:
+![](test/data/runtime.png) | ![](test/data/heatmap.png)
+
+---
+
 `pip import RecFeatureSelect` <br> `from RecFeatureSelect import feature_selector`
 
 * The main function can be found from the source folder, RecFeatureSelect.
 * The input data consists of the original covariance matrix, the feature importance scores, a spearman correlation threshold, and the raw data. 
 * After the run the function will save the final covariance matrix to file as "cov.csv". All correlations will be less than the input threshold.  
-
-### Package Layout
 
 ---
 
@@ -24,13 +28,6 @@ Feature selection via recursive removal of the most correlated pair. The feature
 * [setup.py](https://github.com/daniel-furman/RecFeatureSelect/blob/main/setup.py) - installer script
 * [tests](https://github.com/daniel-furman/RecFeatureSelect/tree/main/test)/ - unit tests
 
-### Example outputs:
-
----
-
-Runtime output | Final covariance (r < 0.85)
-:---------------------------------:|:----------------------------------------:
-![](test/data/img3.png) | ![](test/data/img5.png)
 
 ### Longer Description:
 
