@@ -6,9 +6,8 @@
 
 Feature selection via recursive removal of the most correlated pair. The feature importance scores are used as the rankings, deciding which variable to drop at each call.
 
-Runtime output | Final covariance (r < 0.85)
-:---------------------------------:|:----------------------------------------:
-![](test/data/runtime.png) | ![](test/data/heatmap.png)
+Final covariance matrix with Method 2 for r < 0.85
+![](test/data/heatmap.png)
 
 ---
 
