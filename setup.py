@@ -13,10 +13,10 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="RecFeatureSelect",
-    version="0.2",
+    version="1.3",
     author="Daniel Ryan Furman",
     author_email="dryanfurman@gmail.com",
-    description=("De-correlated feature selection via recursion."),
+    description=("Feature selection functions (1) using Forward Stepwise Selection running on a hyper-param optimized ensemble sklearner (2) using the multi-collinearity matrix and recursively proceeding to a spearman threshold."),
     long_description="See documentation at https://github.com/daniel-furman/RecFeatureSelect",
     license="MIT",
     keywords="feature-selection, multicollinearity",
