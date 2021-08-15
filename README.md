@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/daniel-furman/RecFeatureSelect.svg?branch=main)](https://travis-ci.com/daniel-furman/RecFeatureSelect)
 
-## RecFeatureSelect (Recursive Feature Selection). 
+## RecFeatureSelect
 
 ---
 
